@@ -4,6 +4,7 @@
 @use "@material/textfield";
 @use "@material/layout-grid/mdc-layout-grid";
 @use "@material/chips/styles";
+@use "@material/list/mdc-list";
 
 @include textfield.core-styles;
 
@@ -21,4 +22,12 @@
 
 .mdc-evolution-chip__graphic {
   margin-right: 8px;
+}
+
+.mdc-list-item {
+  min-height: 48px;
+
+  .span {
+    align-self: center;
+  }
 }
