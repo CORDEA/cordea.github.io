@@ -3,6 +3,7 @@
 @use "@material/notched-outline/mdc-notched-outline";
 @use "@material/textfield";
 @use "@material/layout-grid/mdc-layout-grid";
+@use "@material/chips/styles";
 
 @include textfield.core-styles;
 
@@ -16,4 +17,8 @@
 
 .mdc-text-field {
   width: 100%;
+}
+
+.mdc-evolution-chip__graphic {
+  margin-right: 8px;
 }

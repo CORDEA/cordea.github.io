@@ -33,6 +33,41 @@
     "@material/typography" "^11.0.0"
     tslib "^2.1.0"
 
+"@material/checkbox@^11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@material/checkbox/-/checkbox-11.0.0.tgz#ec5b0eac0007ccacfe6300db1e12591703b7ab5f"
+  integrity sha512-vHBG9hK+I6SAn2H1/5u5PUscsHMGc2525QLWeWoZ5VRj6TKtxJ8WKZaPZKea7iwJwKYoe4sI9hOFjE1QQAL/tg==
+  dependencies:
+    "@material/animation" "^11.0.0"
+    "@material/base" "^11.0.0"
+    "@material/density" "^11.0.0"
+    "@material/dom" "^11.0.0"
+    "@material/feature-targeting" "^11.0.0"
+    "@material/ripple" "^11.0.0"
+    "@material/theme" "^11.0.0"
+    "@material/touch-target" "^11.0.0"
+    tslib "^2.1.0"
+
+"@material/chips@^11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@material/chips/-/chips-11.0.0.tgz#82056fe2be03fee7c47369e6030ac5464b3cb491"
+  integrity sha512-9gzm0G0e0VQ0SJnfrRws5SOiK+Qi7Crg/FSTsw0Lk5frsHsZt1mKB72d2rOpeXDYb8gox2GUhuO0U/IIc4EIrw==
+  dependencies:
+    "@material/animation" "^11.0.0"
+    "@material/base" "^11.0.0"
+    "@material/checkbox" "^11.0.0"
+    "@material/density" "^11.0.0"
+    "@material/dom" "^11.0.0"
+    "@material/elevation" "^11.0.0"
+    "@material/feature-targeting" "^11.0.0"
+    "@material/ripple" "^11.0.0"
+    "@material/rtl" "^11.0.0"
+    "@material/shape" "^11.0.0"
+    "@material/theme" "^11.0.0"
+    "@material/touch-target" "^11.0.0"
+    "@material/typography" "^11.0.0"
+    tslib "^2.1.0"
+
 "@material/density@^11.0.0":
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/@material/density/-/density-11.0.0.tgz#862b345007f218ab856ba39f2cb8c59712f18270"
