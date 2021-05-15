@@ -27,7 +27,8 @@
                     <span class="mdc-notched-outline__trailing">
                     </span>
                 </span>
-                <input type="text" class="mdc-text-field__input" aria-labelledby="first-name-label">
+                <input type="text" class="mdc-text-field__input" aria-labelledby="first-name-label"
+                       value="{{profile.firstName}}">
             </label>
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
@@ -40,7 +41,8 @@
                     <span class="mdc-notched-outline__trailing">
                     </span>
                 </span>
-                <input type="text" class="mdc-text-field__input" aria-labelledby="last-name-label">
+                <input type="text" class="mdc-text-field__input" aria-labelledby="last-name-label"
+                       value="{{profile.lastName}}">
             </label>
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
@@ -53,7 +55,8 @@
                     <span class="mdc-notched-outline__trailing">
                     </span>
                 </span>
-                <input type="text" class="mdc-text-field__input" aria-labelledby="first-name-kanji-label">
+                <input type="text" class="mdc-text-field__input" aria-labelledby="first-name-kanji-label"
+                       value="{{profile.firstNameKanji}}">
             </label>
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
@@ -66,7 +69,8 @@
                     <span class="mdc-notched-outline__trailing">
                     </span>
                 </span>
-                <input type="text" class="mdc-text-field__input" aria-labelledby="last-name-kanji-label">
+                <input type="text" class="mdc-text-field__input" aria-labelledby="last-name-kanji-label"
+                       value="{{profile.lastNameKanji}}">
             </label>
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
@@ -79,7 +83,8 @@
                     <span class="mdc-notched-outline__trailing">
                     </span>
                 </span>
-                <input type="text" class="mdc-text-field__input" aria-labelledby="location-label">
+                <input type="text" class="mdc-text-field__input" aria-labelledby="location-label"
+                       value="{{profile.location}}">
             </label>
         </div>
 
@@ -95,7 +100,8 @@
                     <span class="mdc-notched-outline__trailing">
                     </span>
                 </span>
-                <input type="text" class="mdc-text-field__input" aria-labelledby="email-address-label">
+                <input type="text" class="mdc-text-field__input" aria-labelledby="email-address-label"
+                       value="{{profile.emailAddress}}">
             </label>
         </div>
 
@@ -111,7 +117,7 @@
                     <span class="mdc-notched-outline__trailing">
                     </span>
                 </span>
-                <input type="text" class="mdc-text-field__input" aria-labelledby="job-label">
+                <input type="text" class="mdc-text-field__input" aria-labelledby="job-label" value="{{profile.job}}">
             </label>
         </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
@@ -124,7 +130,8 @@
                     <span class="mdc-notched-outline__trailing">
                     </span>
                 </span>
-                <input type="text" class="mdc-text-field__input" aria-labelledby="company-label">
+                <input type="text" class="mdc-text-field__input" aria-labelledby="company-label"
+                       value="{{profile.company}}">
             </label>
         </div>
 
@@ -141,7 +148,7 @@
             </span>
                 <span class="mdc-text-field__resizer">
                 <textarea class="mdc-text-field__input" aria-labelledby="intro-label-id" rows="8" cols="40"
-                          maxlength="1000"></textarea>
+                          maxlength="1000">{{introduction}}</textarea>
                 <span class="mdc-text-field-character-counter">0 / 1000</span>
             </span>
             </label>
@@ -154,20 +161,21 @@
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <span class="mdc-evolution-chip-set" role="grid">
                 <span class="mdc-evolution-chip-set__chips" role="presentation">
-                    <span class="mdc-evolution-chip" role="row" id="c0">
-                        <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary" role="option">
-                            <span class="mdc-evolution-chip__action mdc-evolution-chip__action--primary" type="button"
-                                  tabindex="0">
-                                <span class="mdc-evolution-chip__ripple mdc-evolution-chip__ripple--primary"></span>
-                                <span class="mdc-evolution-chip__graphic">
-                                    <span class="mdc-evolution-chip__icon mdc-evolution-chip__icon--primary material-icons">
-                                        keyboard
+                    {{#each skill.items}}
+                        <span class="mdc-evolution-chip" role="row" id="c0">
+                            <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary" role="option">
+                                <span class="mdc-evolution-chip__action mdc-evolution-chip__action--primary">
+                                    <span class="mdc-evolution-chip__ripple mdc-evolution-chip__ripple--primary"></span>
+                                    <span class="mdc-evolution-chip__graphic">
+                                        <span class="mdc-evolution-chip__icon mdc-evolution-chip__icon--primary material-icons">
+                                            keyboard
+                                        </span>
                                     </span>
+                                    <span class="mdc-evolution-chip__text-label">{{this}}</span>
                                 </span>
-                                <span class="mdc-evolution-chip__text-label">Kotlin</span>
                             </span>
                         </span>
-                    </span>
+                    {{/each}}
                 </span>
             </span>
         </div>
@@ -182,7 +190,8 @@
                     <span class="mdc-notched-outline__trailing">
                     </span>
                 </span>
-                <input type="text" class="mdc-text-field__input" aria-labelledby="skill-label">
+                <input type="text" class="mdc-text-field__input" aria-labelledby="skill-label"
+                       value="{{skill.inProgress}}">
             </label>
         </div>
 
@@ -192,10 +201,12 @@
 
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <ul class="mdc-list">
-                <li class="mdc-list-item" tabindex="0">
-                    <span class="mdc-list-item__ripple"></span>
-                    <span class="mdc-list-item__text"></span>
-                </li>
+                {{#each sns}}
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">{{this}}</span>
+                    </li>
+                {{/each}}
             </ul>
         </div>
 
@@ -234,5 +245,5 @@
     </div>
 </div>
 </body>
-<script src="./dist/index.bundle.js"></script>
+<script src="./index.bundle.js"></script>
 </html>
