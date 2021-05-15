@@ -160,9 +160,9 @@
 
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <span class="mdc-evolution-chip-set" role="grid">
-                <span class="mdc-evolution-chip-set__chips" role="presentation">
+                <span class="mdc-evolution-chip-set__chips" id="skill-chip-set--span" role="presentation">
                     {{#each skill.items}}
-                        <span class="mdc-evolution-chip" role="row" id="c0">
+                        <span class="mdc-evolution-chip" role="row">
                             <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary" role="option">
                                 <span class="mdc-evolution-chip__action mdc-evolution-chip__action--primary">
                                     <span class="mdc-evolution-chip__ripple mdc-evolution-chip__ripple--primary"></span>
@@ -191,7 +191,7 @@
                     </span>
                 </span>
                 <input type="text" class="mdc-text-field__input" aria-labelledby="skill-label"
-                       value="{{skill.inProgress}}">
+                       id="skill-text-field--input" value="{{skill.inProgress}}">
             </label>
         </div>
 
@@ -245,5 +245,20 @@
     </div>
 </div>
 </body>
+<template id="skill-chip">
+    <span class="mdc-evolution-chip" role="row">
+        <span class="mdc-evolution-chip__cell mdc-evolution-chip__cell--primary" role="option">
+            <span class="mdc-evolution-chip__action mdc-evolution-chip__action--primary">
+                <span class="mdc-evolution-chip__ripple mdc-evolution-chip__ripple--primary"></span>
+                <span class="mdc-evolution-chip__graphic">
+                    <span class="mdc-evolution-chip__icon mdc-evolution-chip__icon--primary material-icons">
+                        thumb_up
+                    </span>
+                </span>
+                <span class="mdc-evolution-chip__text-label"></span>
+            </span>
+        </span>
+    </span>
+</template>
 <script src="./index.bundle.js"></script>
 </html>
