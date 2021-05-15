@@ -15,7 +15,7 @@ new MDCChipSet(document.querySelector('.mdc-evolution-chip-set'));
 
 const skillChipSet = document.querySelector('#skill-chip-set--span');
 const skillTextField = document.querySelector('#skill-text-field--input');
-skillTextField.addEventListener('keydown', function (e) {
+skillTextField.addEventListener('keydown', e => {
     if (e.key !== 'Enter' && e.keyCode !== 13) {
         return;
     }
@@ -32,7 +32,7 @@ skillTextField.addEventListener('keydown', function (e) {
 const snsList = document.querySelector('#sns-list');
 const snsNameTextField = document.querySelector('#sns-name-text-field--input');
 const snsUrlTextField = document.querySelector('#sns-url-text-field--input');
-snsUrlTextField.addEventListener('keydown', function (e) {
+snsUrlTextField.addEventListener('keydown', e => {
     if (e.key !== 'Enter' && e.keyCode !== 13) {
         return;
     }
@@ -43,6 +43,13 @@ snsUrlTextField.addEventListener('keydown', function (e) {
     }
     const template = document.querySelector('#sns-item');
     const item = template.content.cloneNode(true);
+    item.querySelector('.mdc-list-item').addEventListener('click', _ => {
+        window.open(url);
+    });
     item.querySelector('.mdc-list-item__text').textContent = name;
     snsList.appendChild(item);
 });
+
+window.onSnsItemClicked = url => {
+    window.open(url);
+}

@@ -202,7 +202,7 @@
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <ul class="mdc-list" id="sns-list">
                 {{#each sns}}
-                    <li class="mdc-list-item">
+                    <li class="mdc-list-item" onclick="onSnsItemClicked('{{this.url}}')">
                         <span class="mdc-list-item__ripple"></span>
                         <span class="mdc-list-item__text">{{this.name}}</span>
                     </li>
