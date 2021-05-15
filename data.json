@@ -9,7 +9,7 @@
     "job": "Android/Flutter applications engineer",
     "company": "LINE Corporation"
   },
-  "introduction": "",
+  "introduction": "I'm an Android/Flutter applications engineer at LINE Corporation, and live in Tokyo. LINE is my 4th company and I have been working since Feb 2021. I used to work for Kyash Inc, CyberAgent Inc and Fenrir Inc.\nI currently focus on Flutter application development, but always have interests widely, and I'm still working on many things as a hobby. For example, iOS, Font-end technologies, AWS etc.\n\nIn programming language, I mainly use Dart/Kotlin at work. As a hobby, developing using many programming languages, using Python, Nim, Golang, C#, JavaScript etc (Please see Skills for details). Native language is Japanese. English uses to read api document and to write commit message, issue, blog, but I am not good at talking.",
   "skill": {
     "items": [
       {
@@ -67,14 +67,6 @@
       {
         "icon": "keyboard",
         "name": "F#"
-      },
-      {
-        "icon": "keyboard",
-        "name": "Objective-C"
-      },
-      {
-        "icon": "keyboard",
-        "name": "Rust"
       }
     ],
     "inProgress": "El"
