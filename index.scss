@@ -5,6 +5,7 @@
 @use "@material/layout-grid/mdc-layout-grid";
 @use "@material/chips/styles";
 @use "@material/list/mdc-list";
+@use "@material/button/mdc-button";
 
 @include textfield.core-styles;
 
@@ -30,4 +31,8 @@
   .span {
     align-self: center;
   }
+}
+
+.update-button {
+  text-align: end;
 }
