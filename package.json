@@ -1,0 +1,8 @@
+{
+  "name": "profile-2021",
+  "version": "1.0.0",
+  "repository": "https://github.com/CORDEA/profile-2021",
+  "author": "Yoshihiro Tanaka <contact@cordea.jp>",
+  "license": "Apache-2.0",
+  "private": true
+}
