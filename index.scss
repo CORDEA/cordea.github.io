@@ -1,0 +1,19 @@
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+@use "@material/layout-grid/mdc-layout-grid";
+
+@include textfield.core-styles;
+
+.body {
+  margin: 16px;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.mdc-text-field {
+  width: 100%;
+}
