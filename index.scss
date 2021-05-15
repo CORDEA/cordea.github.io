@@ -1,3 +1,13 @@
+@use "base";
+
+@use "@material/theme" with (
+  $primary: base.$primary-color,
+  $secondary: base.$accent-color,
+  $surface: base.$accent-color,
+  $on-primary: base.$text-color--primary,
+  $on-secondary: base.$text-color--primary,
+);
+
 @use "@material/typography/mdc-typography";
 @use "@material/floating-label/mdc-floating-label";
 @use "@material/line-ripple/mdc-line-ripple";

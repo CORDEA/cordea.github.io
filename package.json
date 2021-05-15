@@ -18,6 +18,7 @@
     "@material/layout-grid": "^11.0.0",
     "@material/list": "^11.0.0",
     "@material/textfield": "^11.0.0",
+    "@material/theme": "^11.0.0",
     "@material/typography": "^11.0.0"
   }
 }
