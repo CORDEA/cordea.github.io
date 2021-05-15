@@ -12,8 +12,72 @@
   "introduction": "",
   "skill": {
     "items": [
+      {
+        "icon": "keyboard",
+        "name": "Kotlin"
+      },
+      {
+        "icon": "build",
+        "name": "Android"
+      },
+      {
+        "icon": "keyboard",
+        "name": "Dart"
+      },
+      {
+        "icon": "build",
+        "name": "Flutter"
+      },
+      {
+        "icon": "keyboard",
+        "name": "JavaScript"
+      },
+      {
+        "icon": "keyboard",
+        "name": "Java"
+      },
+      {
+        "icon": "keyboard",
+        "name": "C#"
+      },
+      {
+        "icon": "keyboard",
+        "name": "TypeScript"
+      },
+      {
+        "icon": "keyboard",
+        "name": "Python"
+      },
+      {
+        "icon": "build",
+        "name": "iOS"
+      },
+      {
+        "icon": "keyboard",
+        "name": "Go"
+      },
+      {
+        "icon": "keyboard",
+        "name": "Swift"
+      },
+      {
+        "icon": "keyboard",
+        "name": "Nim"
+      },
+      {
+        "icon": "keyboard",
+        "name": "F#"
+      },
+      {
+        "icon": "keyboard",
+        "name": "Objective-C"
+      },
+      {
+        "icon": "keyboard",
+        "name": "Rust"
+      }
     ],
-    "inProgress": ""
+    "inProgress": "El"
   },
   "sns": [
   ]
