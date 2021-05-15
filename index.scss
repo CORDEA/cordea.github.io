@@ -38,10 +38,10 @@
 
 .mdc-list-item {
   min-height: 48px;
+}
 
-  .span {
-    align-self: center;
-  }
+.mdc-list-item__text {
+  align-self: center;
 }
 
 .update-button {
