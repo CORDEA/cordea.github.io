@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body class="mdc-typography">
 <div class="mdc-layout-grid container">
     <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <h3 class="mdc-typography--headline3">Profile</h3>
+        </div>
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
             <label class="mdc-text-field mdc-text-field--outlined">
                 <span class="mdc-notched-outline">
@@ -58,6 +61,91 @@
                 </span>
                 <input type="text" class="mdc-text-field__input" aria-labelledby="last-name-kanji-label">
             </label>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <label class="mdc-text-field mdc-text-field--outlined">
+                <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="location-label">Location</span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing">
+                    </span>
+                </span>
+                <input type="text" class="mdc-text-field__input" aria-labelledby="location-label">
+            </label>
+        </div>
+
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"></div>
+
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <label class="mdc-text-field mdc-text-field--outlined">
+                <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="email-address-label">Email address</span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing">
+                    </span>
+                </span>
+                <input type="text" class="mdc-text-field__input" aria-labelledby="email-address-label">
+            </label>
+        </div>
+
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"></div>
+
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <label class="mdc-text-field mdc-text-field--outlined">
+                <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="job-label">Job</span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing">
+                    </span>
+                </span>
+                <input type="text" class="mdc-text-field__input" aria-labelledby="job-label">
+            </label>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <label class="mdc-text-field mdc-text-field--outlined">
+                <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="company-label">Company</span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing">
+                    </span>
+                </span>
+                <input type="text" class="mdc-text-field__input" aria-labelledby="company-label">
+            </label>
+        </div>
+
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"></div>
+
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--with-internal-counter">
+            <span class="mdc-notched-outline">
+                <span class="mdc-notched-outline__leading"></span>
+                <span class="mdc-notched-outline__notch">
+                    <span class="mdc-floating-label" id="intro-label-id">Introduction</span>
+                </span>
+                <span class="mdc-notched-outline__trailing"></span>
+            </span>
+                <span class="mdc-text-field__resizer">
+                <textarea class="mdc-text-field__input" aria-labelledby="intro-label-id" rows="8" cols="40"
+                          maxlength="1000"></textarea>
+                <span class="mdc-text-field-character-counter">0 / 1000</span>
+            </span>
+            </label>
+        </div>
+
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <h3 class="mdc-typography--headline3">Skill</h3>
+        </div>
+
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <h3 class="mdc-typography--headline3">SNS</h3>
         </div>
     </div>
 </div>
