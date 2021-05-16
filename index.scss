@@ -47,3 +47,8 @@
 .update-button {
   text-align: end;
 }
+
+#annotation:link, #annotation:visited {
+  color: base.$text-color--secondary;
+  text-decoration: none;
+}
