@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '16'
       - run: npm install --global yarn
-      - run: npm install
+      - run: yarn
       - run: yarn build --config ./webpack.prod.js
       - uses: actions/checkout@v2
         with:
