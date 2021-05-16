@@ -9,6 +9,7 @@
     "css-loader": "^5.2.4",
     "handlebars-webpack-plugin": "^2.2.1",
     "html-webpack-plugin": "^4.4.1",
+    "mini-css-extract-plugin": "^1.6.0",
     "sass": "^1.32.13",
     "sass-loader": "^11.1.1",
     "style-loader": "^2.0.0",

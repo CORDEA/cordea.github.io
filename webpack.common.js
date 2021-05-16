@@ -1,4 +1,5 @@
 const HandlebarsPlugin = require('handlebars-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
@@ -12,7 +13,7 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    'style-loader',
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
                     {
                         loader: 'sass-loader',
@@ -29,6 +30,9 @@ module.exports = {
         ],
     },
     plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'index.bundle.css',
+        }),
         new HandlebarsPlugin({
             entry: 'index.hbs',
             output: path.join(path.resolve(__dirname, 'dist'), '[name].html'),
