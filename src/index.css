@@ -1,3 +1,28 @@
 body {
+    margin: 16px 64px;
+    text-align: center;
     font-family: "Noto Serif", serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.icon {
+    margin-top: 80px;
+}
+
+h1 {
+    margin-top: 80px;
+    font-family: "Noto Sans", serif;
+    font-size: 76px;
+    font-weight: 600;
+    letter-spacing: 0.4em;
+}
+
+h2 {
+    margin-top: 32px;
+    margin-bottom: 220px;
+    font-size: 36px;
 }
