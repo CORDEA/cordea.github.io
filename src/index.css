@@ -27,8 +27,10 @@ h2 {
     font-size: 36px;
 }
 
-label {
+a, a:visited {
+    color: inherit;
     font-size: 24px;
+    text-decoration: none;
 }
 
 .link {
