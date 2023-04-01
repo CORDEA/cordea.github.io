@@ -12,20 +12,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-      - run: npm install --global yarn
-      - run: yarn
-      - run: yarn build --config ./webpack.prod.js
+      - run: mv ./src/* ./
       - uses: actions/checkout@v2
         with:
           ref: pages
           clean: false
-      - run: mv ./dist/* ./
       - run: |
           git config user.name "Yoshihiro Tanaka"
           git config user.email "contact@cordea.jp"
-          git add *.html *.js *.css
+          git add *.html *.css *.svg
           git commit -m "update"
           git push
