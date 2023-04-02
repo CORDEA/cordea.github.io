@@ -18,11 +18,11 @@ jobs:
           ref: pages
           clean: false
       - run: |
-          rm -f *.css *.js *.html *.svg
+          git rm --ignore-unmatch *.css *.js *.html *.svg
           mv ./dist/* ./
+          git add *.html *.css *.svg
       - run: |
           git config user.name "Yoshihiro Tanaka"
           git config user.email "contact@cordea.jp"
-          git add *.html *.css *.svg
           git commit -m "update"
           git push
