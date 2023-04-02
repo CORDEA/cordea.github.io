@@ -12,11 +12,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: mv ./src/* ./
+      - run: mv ./src ./dist
       - uses: actions/checkout@v2
         with:
           ref: pages
           clean: false
+      - run: |
+          rm -f *.css *.js *.html *.svg
+          mv ./dist/* ./
       - run: |
           git config user.name "Yoshihiro Tanaka"
           git config user.email "contact@cordea.jp"
